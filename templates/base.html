@@ -1,0 +1,113 @@
+{% load static %}
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>Sislaf</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{% static 'layout/styles/layout.css' %}" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('{% static 'images/demo/backgrounds/bg8.jpg' %}');">
+  <!-- ################################################################################################ -->
+  <div class="wrapper row0">
+    <div id="topbar" class="hoc clear">
+      <!--<div class="fl_left">-->
+        <!--&lt;!&ndash; ################################################################################################ &ndash;&gt;-->
+        <!--<ul class="nospace">-->
+          <!--<li><i class="fas fa-phone rgtspace-5"></i> +00 (123) 456 7890</li>-->
+          <!--<li><i class="far fa-envelope rgtspace-5"></i> info@domain.com</li>-->
+        <!--</ul>-->
+        <!--&lt;!&ndash; ################################################################################################ &ndash;&gt;-->
+      <!--</div>-->
+      <!--<div class="fl_right">-->
+        <!--&lt;!&ndash;&lt;!&ndash; ################################################################################################ &ndash;&gt;&ndash;&gt;-->
+        <!--<ul class="nospace">-->
+          <!--&lt;!&ndash;<li><a href="index.html"><i class="fas fa-home"></i></a></li>&ndash;&gt;-->
+          <!--&lt;!&ndash;<li><a href="#" title="Help Centre"><i class="far fa-life-ring"></i></a></li>&ndash;&gt;-->
+          <!--&lt;!&ndash;<li><a href="#" title="Login"><i class="fas fa-sign-in-alt"></i></a></li>&ndash;&gt;-->
+          <!--&lt;!&ndash;<li><a href="#" title="Sign Up"><i class="fas fa-edit"></i></a></li>&ndash;&gt;-->
+          <!--<li id="searchform">-->
+            <!--<div>-->
+              <!--<form action="{% url 'searchResult' %}" method="get" >-->
+
+                <!--<fieldset>-->
+                  <!--<legend>Quick Search:</legend>-->
+                  <!--<input type="text" placeholder="Enter search term" name="q">-->
+                  <!--<button type="submit"><i class="fas fa-search"></i></button>-->
+                <!--</fieldset>-->
+              <!--</form>-->
+            <!--</div>-->
+          <!--</li>-->
+        <!--</ul>-->
+        <!--&lt;!&ndash;&lt;!&ndash; ################################################################################################ &ndash;&gt;&ndash;&gt;-->
+      <!--</div>-->
+    </div>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+
+
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear">
+      <div id="logo" class="fl_left">
+        <!-- ################################################################################################ -->
+        <h1><a href="/">SWERA'S</a></h1>
+        <!-- ################################################################################################ -->
+      </div>
+      <nav id="mainav" class="fl_right">
+        <!-- ################################################################################################ -->
+        <ul class="clear">
+          <li class="active"><a href="{% url 'index' %}">Home</a></li>
+           <li class="active"><a href="{% url 'register' %}">Registration</a></li>
+           <li class="active"><a href="{% url 'login' %}">Login</a></li>
+
+       <li class="nav-item active">
+        <!--<a class="nav-link" href="{% url 'cart_detail' %}">cart</a>-->
+
+          <!--<li><a class="drop" href="">Food Items</a>-->
+            <!--<ul>-->
+                 <!--&lt;!&ndash;<li><a href="{% url 'home' %}">All Products</a></li>&ndash;&gt;-->
+               <!--{% for i in ct %}-->
+
+               <!--<li><a href="{{i.get_url}}">{{i.name}}</a></li>-->
+              <!--{% endfor %}-->
+              <!--<li><a href="{% static 'pages/full-width.html' %}">Full Width</a></li>-->
+              <!--<li><a href="{% static 'pages/sidebar-left.html' %}">Sidebar Left</a></li>-->
+              <!--<li><a href="{% static 'pages/sidebar-right.html' %}">Sidebar Right</a></li>-->
+              <!--<li><a href="{% static 'pages/basic-grid.html' %}">Basic Grid</a></li>-->
+              <!--<li><a href="{% static 'pages/font-icons.html' %}">Font Icons</a></li>-->
+            <!--</ul>-->
+          </li>
+          <!--<li><a class="drop" href="#">Dropdown</a>-->
+            <!--<ul>-->
+              <!--<li><a href="#">Level 2</a></li>-->
+              <!--<li><a class="drop" href="#">Level 2 + Drop</a>-->
+                <!--<ul>-->
+                  <!--<li><a href="#">Level 3</a></li>-->
+                  <!--<li><a href="#">Level 3</a></li>-->
+                  <!--<li><a href="#">Level 3</a></li>-->
+                <!--</ul>-->
+              <!--</li>-->
+              <!--<li><a href="#">Level 2</a></li>-->
+            <!--</ul>-->
+          <!--</li>-->
+          <!--<li><a href="#">Link Text</a></li>-->
+          <!--<li><a href="#">Link Text</a></li>-->
+          <!--<li><a href="#">Link Text</a></li>-->
+        </ul>
+        <!-- ################################################################################################ -->
+      </nav>
+    </header>
+  </div>
+</div>
+
+{% block content %}
+{% endblock %}
+</body>
+</html>

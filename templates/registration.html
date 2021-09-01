@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>Sislaf</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link href="{% static 'layout/styles/layout.css' %}" rel="stylesheet" type="text/css" media="all">
+  <style>
+    .abc{
+    height:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+  </style>
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div  class="abc" style="background-image:url('{% static 'images/demo/backgrounds/bg8.jpg' %}');">
+  <!--&lt;!&ndash; ################################################################################################ &ndash;&gt;-->
+  <!--<div class="wrapper row0">-->
+    <!--<div id="topbar" class="hoc clear">-->
+      <!--<div class="fl_left">-->
+        <!--&lt;!&ndash; ################################################################################################ &ndash;&gt;-->
+        <!--<ul class="nospace">-->
+          <!--&lt;!&ndash;<li><i class="fas fa-phone rgtspace-5"></i> +00 (123) 456 7890</li>&ndash;&gt;-->
+          <!--&lt;!&ndash;<li><i class="far fa-envelope rgtspace-5"></i> info@domain.com</li>&ndash;&gt;-->
+        <!--</ul>-->
+        <!--&lt;!&ndash; ################################################################################################ &ndash;&gt;-->
+      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+      <!--<div class="fl_right">-->
+        <!--&lt;!&ndash;&lt;!&ndash; ################################################################################################ &ndash;&gt;&ndash;&gt;-->
+        <!--<ul class="nospace">-->
+          <!--&lt;!&ndash;<li><a href="index.html"><i class="fas fa-home"></i></a></li>&ndash;&gt;-->
+          <!--&lt;!&ndash;<li><a href="#" title="Help Centre"><i class="far fa-life-ring"></i></a></li>&ndash;&gt;-->
+          <!--&lt;!&ndash;<li><a href="#" title="Login"><i class="fas fa-sign-in-alt"></i></a></li>&ndash;&gt;-->
+          <!--&lt;!&ndash;<li><a href="#" title="Sign Up"><i class="fas fa-edit"></i></a></li>&ndash;&gt;-->
+          <!--<li id="searchform">-->
+            <!--<div>-->
+              <!--<form action="{% url 'searchResult' %}" method="get">-->
+                <!--<fieldset>-->
+                  <!--<legend>Quick Search:</legend>-->
+                  <!--<input type="text" placeholder="Enter search term&hellip;" name="q">-->
+                  <!--<button type="submit"><i class="fas fa-search"></i></button>-->
+                <!--</fieldset>-->
+              <!--</form>-->
+            <!--</div>-->
+          <!--</li>-->
+        <!--</ul>-->
+        <!--&lt;!&ndash; ################################################################################################ &ndash;&gt;-->
+      <!--</div>-->
+    <!--</div>-->
+
+  <!--&lt;!&ndash; ################################################################################################ &ndash;&gt;-->
+  <!--&lt;!&ndash; ################################################################################################ &ndash;&gt;-->
+  <!--&lt;!&ndash; ################################################################################################ &ndash;&gt;-->
+  <!--<div class="wrapper row1">-->
+    <!--<header id="header" class="hoc clear">-->
+      <!--<div id="logo" class="fl_left">-->
+        <!--&lt;!&ndash; ################################################################################################ &ndash;&gt;-->
+        <!--<h1><a href="index.html">SWERA'S</a></h1>-->
+        <!--&lt;!&ndash; ################################################################################################ &ndash;&gt;-->
+      <!--</div>-->
+      <!--<nav id="mainav" class="fl_right">-->
+        <!--&lt;!&ndash; ################################################################################################ &ndash;&gt;-->
+        <!--<ul class="clear">-->
+          <!--<li class="active"><a href="index.html">Home</a></li>-->
+          <!--<li><a class="drop" href="#">Pages</a>-->
+            <!--<ul>-->
+              <!--<li><a href="{% static 'pages/gallery.html' %}">Gallery</a></li>-->
+              <!--<li><a href="{% static 'pages/full-width.html' %}">Full Width</a></li>-->
+              <!--<li><a href="{% static 'pages/sidebar-left.html' %}">Sidebar Left</a></li>-->
+              <!--<li><a href="{% static 'pages/sidebar-right.html' %}">Sidebar Right</a></li>-->
+              <!--<li><a href="{% static 'pages/basic-grid.html' %}">Basic Grid</a></li>-->
+              <!--<li><a href="{% static 'pages/font-icons.html' %}">Font Icons</a></li>-->
+            <!--</ul>-->
+          <!--</li>-->
+          <!--&lt;!&ndash;<li><a class="drop" href="#">Dropdown</a>&ndash;&gt;-->
+            <!--&lt;!&ndash;<ul>&ndash;&gt;-->
+              <!--&lt;!&ndash;<li><a href="#">Level 2</a></li>&ndash;&gt;-->
+              <!--&lt;!&ndash;<li><a class="drop" href="#">Level 2 + Drop</a>&ndash;&gt;-->
+                <!--&lt;!&ndash;<ul>&ndash;&gt;-->
+                  <!--&lt;!&ndash;<li><a href="#">Level 3</a></li>&ndash;&gt;-->
+                  <!--&lt;!&ndash;<li><a href="#">Level 3</a></li>&ndash;&gt;-->
+                  <!--&lt;!&ndash;<li><a href="#">Level 3</a></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+              <!--&lt;!&ndash;</li>&ndash;&gt;-->
+              <!--&lt;!&ndash;<li><a href="#">Level 2</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+          <!--&lt;!&ndash;</li>&ndash;&gt;-->
+          <!--&lt;!&ndash;<li><a href="#">Link Text</a></li>&ndash;&gt;-->
+          <!--&lt;!&ndash;<li><a href="#">Link Text</a></li>&ndash;&gt;-->
+          <!--&lt;!&ndash;<li><a href="#">Link Text</a></li>&ndash;&gt;-->
+        <!--</ul>-->
+        <!--&lt;!&ndash; ################################################################################################ &ndash;&gt;-->
+      <!--</nav>-->
+    <!--</header>-->
+  <!--</div>-->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div id="pageintro" class="hoc clear">
+    <!-- ################################################################################################ -->
+    <article>
+      <h3 class="heading">Quality Food Items</h3>
+      <p>Register with us and have quality food items at your door step.</p>
+      <footer>
+        <ul class="nospace inline pushright">
+          <!--<li><a class="btn" href="#">Pharetra etiam</a></li>-->
+          <!--<li><a class="btn inverse" href="#">Sagittis massa</a></li>-->
+        </ul>
+      </footer>
+    </article>
+    <!-- ################################################################################################ -->
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<br>
+<h1><b><center>Registration</center></b></h1>
+<form action="register" method="post">
+     {% csrf_token %}
+    <div class="container">
+     <div class="form-group text-center"><input class="form-control" type="text" name="username" placeholder="username"></div>
+
+        <div class="form-group text-center"><input class="form-control" type="text" name="firstname" placeholder="Firstname"></div>
+        <div class="form-group text-center"><input class="form-control" type="text" name="lastname" placeholder="Lastname"></div>
+        <div class="form-group text-center"> <input class="form-control" type="email" name="email" placeholder="Email"></div>
+        <div class="form-group text-center"> <input class="form-control" type="password" name="password1" placeholder="Password"></div>
+        <div class="form-group text-center"> <input class="form-control" type="password" name="password2" placeholder="Password"></div>
+     <center> <input  class="btn btn-success" type="submit" value="Register"></center>
+
+</div>
+</form>
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear">
+    <!-- ################################################################################################ -->
+      <p class="fl_left"><center>Copyright &copy; 2018 - All Rights Reserved </center></p>
+    <!--<p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>-->
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="{% static 'layout/scripts/jquery.min.js' %}"></script>
+<script src="{% static 'layout/scripts/jquery.backtotop.js' %}"></script>
+<script src="{% static 'layout/scripts/jquery.mobilemenu.js' %}"></script>
+</body>
+</html>
+{% endblock %}
